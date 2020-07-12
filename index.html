@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Landing page!</title>
+  </head>
+  <body>
+    <div style="margin: 20px;">
+      <h1>Hello, sign up for my newsletter!</h1>
+
+      <div>
+        <form action=".php" method="POST">
+          <label for="firstname">First Name:</label><br>
+          <input type="text" id="firstname" name="firstname"><br>
+
+          <div>
+              <p>Gender:</p>
+              <input type="radio" id="female" name="gender" value="female">
+              <label for="female">Female</label><br>
+              <input type="radio" id="male" name="gender" value="female">
+              <label for="male">Male</label><br>
+              <input type="radio" id="other" name="gender" value="other">
+              <label for="other">Other</label>
+          </div>
+
+          <label for="email">Email Address:</label><br>
+          <input type="email" name="email" id="email"><br>
+          <br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCRLSV07wQ84Nlw9GNx0FcGSCbp4U6Y2FU",
+        authDomain: "landing-page-1e106.firebaseapp.com",
+        databaseURL: "https://landing-page-1e106.firebaseio.com",
+        projectId: "landing-page-1e106",
+        storageBucket: "landing-page-1e106.appspot.com",
+        messagingSenderId: "693991561361",
+        appId: "1:693991561361:web:cf10e98aef5281b946c730",
+        measurementId: "G-EY3DRRVE4R"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+  </body>
+</html>
